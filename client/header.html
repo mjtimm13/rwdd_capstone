@@ -1,0 +1,28 @@
+<template name="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="/">Nature Joy at Home</a>
+          </li>
+          <li>
+            <a href="news">Featured Articles</a>
+          </li>
+          <li>
+            <a href="images">Image Portfolio</a>
+          </li>
+          <li>
+            <a href="{{blogPathFor "blogIndex"}}">Discussions</a>
+          </li>
+          <li>
+            <a href="{{blogPathFor "blogAdmin"}}">Start A Discussion (must login)</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {{> loginButtons}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
